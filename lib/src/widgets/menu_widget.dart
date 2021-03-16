@@ -8,7 +8,7 @@ class MenuWidget extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: [
+        children: <Widget>[
           DrawerHeader(
             child: Container(),
             decoration: BoxDecoration(
@@ -35,7 +35,7 @@ class MenuWidget extends StatelessWidget {
               leading: Icon(Icons.settings, color: Colors.blue),
               title: Text('Settings'),
               onTap: () {
-                //Navigator.pop(context);
+                // Navigator.pop(context);
                 Navigator.pushReplacementNamed(context, SettingsPage.routeName);
               }),
         ],
